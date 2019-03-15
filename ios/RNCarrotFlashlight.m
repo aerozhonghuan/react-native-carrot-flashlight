@@ -18,10 +18,10 @@ RCT_EXPORT_MODULE()
  @param state 控制手电筒开关，true:打开，false：关闭
  @param 操作结果的回调successCallback:成功的回调,failCallback:失败时回调数据）
  */
-RCT_EXPORT_METHOD(setFlashlight:(BOOL)state resolver:(RCTResponseSenderBlock)callback{
-    NSString *errorMsg =;
+RCT_EXPORT_METHOD(setFlashlight:(BOOL)isOpen resolver:(RCTResponseSenderBlock)callback){
+    NSString *errorMsg;
     BOOL isSucc = YES;
-    _lightOn = state;
+    _lightOn = isOpen;
     Class captureDeviceClass = NSClassFromString(@"AVCaptureDevice");
     if(captureDeviceClass !=nil) {
         AVCaptureDevice*device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -47,3 +47,4 @@ RCT_EXPORT_METHOD(setFlashlight:(BOOL)state resolver:(RCTResponseSenderBlock)cal
       callback(@[[[NSNumber alloc]initWithBool:isSucc],errorMsg]);
 }
 @end
+
