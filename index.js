@@ -3,8 +3,8 @@ import { NativeModules } from 'react-native';
 
 const { RNCarrotFlashlight } = NativeModules;
 
-export default CarrotFlashlight {
-    setFlashlight: function() {
+export default {
+    setFlashlight() {
         return RNCarrotFlashlight.setFlashlight;
-    };
+    },
 };

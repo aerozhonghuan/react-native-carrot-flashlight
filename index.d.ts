@@ -1,5 +1,6 @@
 declare module "react-native-carrot-flashlight" {
-    export default class CarrotFlashlight {
-        setFlashlight(state,callback?:()=>void);
+    declare const CarrotFlashlight: {
+        setFlashlight(state:boolean,callback?:()=>void) => void;
     }
+    export default CarrotFlashlight;
 }
