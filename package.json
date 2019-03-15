@@ -1,6 +1,6 @@
 {
   "name": "react-native-carrot-flashlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide some methods of operation of the flashlight",
   "main": "index.js",
   "scripts": {
