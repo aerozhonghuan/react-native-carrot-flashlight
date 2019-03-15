@@ -5,6 +5,7 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
+#import <Foundation/Foundation.h>
 @interface RNCarrotFlashlight : NSObject <RCTBridgeModule>
 
 @end

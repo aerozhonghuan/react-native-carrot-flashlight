@@ -1,7 +1,7 @@
 {
   "name": "react-native-carrot-flashlight",
   "version": "1.0.0",
-  "description": "",
+  "description": "Provide some methods of operation of the flashlight",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
