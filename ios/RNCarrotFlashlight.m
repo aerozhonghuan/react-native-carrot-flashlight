@@ -15,8 +15,8 @@ RCT_EXPORT_MODULE()
 
 /**
  操作手电筒方法
- @param state 控制手电筒开关，true:打开，false：关闭
- @param 操作结果的回调successCallback:成功的回调,failCallback:失败时回调数据）
+ @param isOpen 控制手电筒开关，true:打开，false：关闭
+ @param 操作结果的回调callback:回调
  */
 RCT_EXPORT_METHOD(setFlashlight:(BOOL)isOpen resolver:(RCTResponseSenderBlock)callback){
     NSString *errorMsg;
@@ -44,7 +44,7 @@ RCT_EXPORT_METHOD(setFlashlight:(BOOL)isOpen resolver:(RCTResponseSenderBlock)ca
         errorMsg = @"手电筒不可用！";
     }
     //准备回调回去的数据
-      callback(@[[[NSNumber alloc]initWithBool:isSucc],errorMsg]);
+    callback(@[[[NSNumber alloc]initWithBool:isSucc],errorMsg]);
 }
 @end
 
