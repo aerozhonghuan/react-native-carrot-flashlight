@@ -19,7 +19,7 @@ RCT_EXPORT_MODULE()
  @param 操作结果的回调callback:回调
  */
 RCT_EXPORT_METHOD(setFlashlight:(BOOL)isOpen resolver:(RCTResponseSenderBlock)callback){
-    NSString *errorMsg="无错误！";
+    NSString *errorMsg= @"无错误！";
     BOOL isSucc = YES;
     _lightOn = isOpen;
     Class captureDeviceClass = NSClassFromString(@"AVCaptureDevice");
