@@ -20,10 +20,18 @@
     "flashlight",
     "camera"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@https://github.com/rocket-developer/react-native-carrot-flashlight.git"
+  },
   "author": {
     "name": "wanglh",
     "email": "zh-app-developer@aerozhonghuan.com"
   },
+  "bugs": {
+    "url": "https://github.com/rocket-developer/react-native-carrot-flashlight/issues"
+  },
+  "homepage": "https://github.com/rocket-developer/react-native-carrot-flashlight",
   "license": "MIT",
   "peerDependencies": {
     "prop-types": ">=15.6.2",

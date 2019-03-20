@@ -39,7 +39,24 @@
 ```javascript
 import RNCarrotFlashlight from 'react-native-carrot-flashlight';
 
+constructor (props) {
+    super(props)
+    this.state = {
+      flashlightPress:false,//是否打开手电筒
+    }
+  }
+
 // TODO: What to do with the module?
-RNCarrotFlashlight;
+  onPress = ()=>{
+    CarrotFlashlight.setFlashlight((!this.state.flashlightPress),(success,msg) => {
+      if(success){
+          this.setState({
+            flashlightPress:!this.state.flashlightPress
+          })
+        }else{
+          alert(msg);
+        }     
+    })
+  }
 ```
   
