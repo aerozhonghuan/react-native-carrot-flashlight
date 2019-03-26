@@ -33,6 +33,11 @@
   	```
       compile project(':react-native-carrot-flashlight')
   	```
+## Methods
+
+| Method  | Params  | Description |
+| :------------ |:---------------:| :---------------:|
+| setFlashlight | (isOpen, callback(success, errMsg)) | Turn the flashlight on or off |
 
 
 ## Usage
