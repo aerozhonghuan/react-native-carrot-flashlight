@@ -42,7 +42,7 @@
 
 ## Usage
 ```javascript
-import RNCarrotFlashlight from 'react-native-carrot-flashlight';
+import CarrotFlashlight from 'react-native-carrot-flashlight';
 
 constructor (props) {
     super(props)
